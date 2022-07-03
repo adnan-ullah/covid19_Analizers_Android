@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Update_Cases"
+    android:alpha="0.9"
+    android:background="@drawable/card4"
+
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+  >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ListView
+            android:id="@+id/listViewBDState1"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_marginTop="50dp"
+            android:dividerHeight="10sp"
+            android:padding="8dp">
+
+
+        </ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Update cases"
+            android:textColor="@color/textInputLayout"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginBottom="70dp"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:background="@drawable/button_back_color_change"
+            android:backgroundTint="#7DFFF2"
+            android:fontFamily="@font/calibri"
+            android:textStyle="bold"
+            android:id="@+id/updateState1"
+            >
+
+        </Button>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:elevation="0dp"
+
+        app:cardCornerRadius="10dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:layout_gravity="left"
+        app:cardUseCompatPadding="true"
+        android:clickable="true"
+        android:thicknessRatio="1.9"
+        android:layout_centerHorizontal="true"
+
+
+
+        >
+
+
+
+
+    <com.jgabrielfreitas.core.BlurImageView
+        android:id="@+id/barBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:radius="24"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/barbg"
+        android:translationZ="-90dp">
+
+
+    </com.jgabrielfreitas.core.BlurImageView>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:scaleType="centerCrop"
+               />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barchart3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:minHeight="500dp"
+
+               />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</LinearLayout>
+
+</LinearLayout>
+</ScrollView>

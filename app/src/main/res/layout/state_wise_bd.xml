@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/state_wise_fragment"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/loginbg"
+        android:orientation="vertical"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+
+            <ListView
+                android:id="@+id/listViewBDState"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:layout_marginTop="50dp"
+                android:dividerHeight="10sp"
+                android:padding="8dp">
+
+
+            </ListView>
+
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Update cases"
+                android:textColor="@color/textInputLayout"
+                android:layout_alignParentBottom="true"
+                 android:layout_alignParentLeft="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="70dp"
+                android:textSize="10sp"
+                android:textAlignment="center"
+                android:background="@drawable/button_back_color_change"
+                android:fontFamily="@font/calibri"
+                android:id="@+id/updateState"
+                >
+
+            </Button>
+
+            <com.mc0239.ComboBox
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/updateState"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="70dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_button"
+                android:id="@+id/stateList"
+                android:textAlignment="center"
+                android:backgroundTint="@color/cardViewColor"
+
+                >
+
+
+            </com.mc0239.ComboBox>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

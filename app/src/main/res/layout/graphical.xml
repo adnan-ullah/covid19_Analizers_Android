@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Graphical"
+    android:id="@+id/graphicLayout"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/listcountrybg"
+        android:orientation="vertical"
+        android:alpha=".7"
+
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            >
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+            <ImageView
+                android:id="@+id/searchFlag"
+                android:layout_width="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/search"
+                android:scaleType="fitCenter"
+                >
+
+            </ImageView>
+            <EditText
+                android:id="@+id/searchCountry"
+                android:layout_width="match_parent"
+                android:background="@drawable/ic_button"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="55dp"
+                android:layout_toRightOf="@+id/searchFlag">
+
+            </EditText>
+
+            <ListView
+                android:id="@+id/listViewCountry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="50dp"
+                android:dividerHeight="10sp"
+                android:padding="8dp">
+
+
+            </ListView>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
